@@ -10,12 +10,12 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 
 public class App {
-    
-    
-    
     public static void main(String[] args) throws InterruptedException, MalformedURLException {
-        AutomateSearchAmazon searchAmazonObj = new AutomateSearchAmazon();
-        searchAmazonObj.searchAmazon();
+        // AutomateSearchAmazon searchAmazonObj = new AutomateSearchAmazon();
+        // searchAmazonObj.searchAmazon();
+        BookMyShowHyperLink countLink  = new BookMyShowHyperLink();
+        countLink.hyperLinkCount();
+       
         
     }
 }

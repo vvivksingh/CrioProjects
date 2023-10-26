@@ -1,15 +1,10 @@
 package demo;
 
-import java.net.MalformedURLException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-import com.google.common.annotations.VisibleForTesting;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class AutomateSearchAmazon {
