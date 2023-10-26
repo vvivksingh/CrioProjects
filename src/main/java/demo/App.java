@@ -3,6 +3,7 @@
  */
 package demo;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 
 import org.openqa.selenium.WebDriver;
@@ -10,7 +11,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class App {
-    public static void main(String[] args) throws InterruptedException, MalformedURLException {
+    public static void main(String[] args) throws InterruptedException, MalformedURLException, IOException {
         // AutomateSearchAmazon searchAmazonObj = new AutomateSearchAmazon();
         // searchAmazonObj.searchAmazon();
 
@@ -26,8 +27,10 @@ public class App {
         // AutomateNestedFramesText nestedFrame = new AutomateNestedFramesText();
         // nestedFrame.iFrames();
 
-        IMDBRatings ratings = new IMDBRatings();
-        ratings.imdbRatings();
+        // IMDBRatings ratings = new IMDBRatings();
+        // ratings.imdbRatings();
 
+        AutomateWindowHandle windowHandeler = new AutomateWindowHandle();
+        windowHandeler.handleWindow();
     }
 }
