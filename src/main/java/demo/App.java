@@ -23,8 +23,11 @@ public class App {
         // ImageUrl imgSrc = new ImageUrl();
         // imgSrc.getImageSrc();
 
-        AutomateNestedFramesText nestedFrame = new AutomateNestedFramesText();
-        nestedFrame.iFrames();
+        // AutomateNestedFramesText nestedFrame = new AutomateNestedFramesText();
+        // nestedFrame.iFrames();
+
+        IMDBRatings ratings = new IMDBRatings();
+        ratings.imdbRatings();
 
     }
 }
