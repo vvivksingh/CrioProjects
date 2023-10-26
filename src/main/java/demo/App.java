@@ -13,8 +13,12 @@ public class App {
     public static void main(String[] args) throws InterruptedException, MalformedURLException {
         // AutomateSearchAmazon searchAmazonObj = new AutomateSearchAmazon();
         // searchAmazonObj.searchAmazon();
-        BookMyShowHyperLink countLink  = new BookMyShowHyperLink();
-        countLink.hyperLinkCount();
+
+        // BookMyShowHyperLink countLink  = new BookMyShowHyperLink();
+        // countLink.hyperLinkCount();
+
+        LinkedinPost post = new LinkedinPost();
+        post.automatePost();
        
         
     }
