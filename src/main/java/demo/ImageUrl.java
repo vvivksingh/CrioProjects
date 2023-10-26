@@ -10,12 +10,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class ImageUrl {
-    public void automatePost(){
+    public void getImageSrc(){
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
-        driver.navigate().to("https://www.linkedin.com/");
-        List<WebElement> anchorTags =  driver.findElements(By.tagName("a"));
-        System.out.println("Total Number of anchor tags are : "+ anchorTags.size());
+        driver.navigate().to("https://in.bookmyshow.com/explore/home/chennai");
+        List<WebElement> imgTags =  driver.findElements(By.xpath("//div[@class=\"style__WidgetContainerBody-sc-lnhrs7-4 YeNog\"]/div//img"));
+        for(WebElement imgSrc : imgTags) {
+            System.out.println("Image url of element : "+ imgSrc.getAttribute("src"));
+        }
         driver.quit();
     }
     

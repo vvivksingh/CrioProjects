@@ -17,9 +17,11 @@ public class App {
         // BookMyShowHyperLink countLink  = new BookMyShowHyperLink();
         // countLink.hyperLinkCount();
 
-        LinkedinPost post = new LinkedinPost();
-        post.automatePost();
+        // LinkedinPost post = new LinkedinPost();
+        // post.automatePost();
        
+        ImageUrl imgSrc = new ImageUrl();
+        imgSrc.getImageSrc();
         
     }
 }
